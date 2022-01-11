@@ -1,27 +1,32 @@
 # React handy hooks
+
 Collection of handy and reusable react hooks
 
 ### How to use
 
 #### Installation (type declaration is included in the package)
-`npm i reaect-handy-hooks`
+
+`npm i react-handy-hooks`
 
 #### Import
+
 ```js
-import { useOnEsc } from 'react-dom-hooks';
+import { useOnEsc } from "react-dom-hooks";
 // Or just one hook
-import useOnEsc from 'react-dom-hooks/useOnEsc';
+import useOnEsc from "react-dom-hooks/useOnEsc";
 ```
 
 ### Hooks
 
 #### useOnEsc
+
 ```ts
 // Callback on 'Escape' keyup pressed
 useOnEsc(onEsc: () => void) => void;
 ```
 
 #### useKeyListener
+
 ```ts
 // Callback on specified key(s) pressed
 useKeyListener(
@@ -31,6 +36,7 @@ useKeyListener(
 ```
 
 #### useCountDown
+
 ```ts
 // Count down from provided date to Date.now(), returns number of seconds or null if finished
 useCountDown(
@@ -40,6 +46,7 @@ useCountDown(
 ```
 
 #### useOnResize
+
 ```ts
 // Callback on 'resize' window event
 useOnResize(cb: (size: {
@@ -49,6 +56,7 @@ useOnResize(cb: (size: {
 ```
 
 #### useResizeObserver using [ResizeObserver](https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver)
+
 ```ts
 // Callback when ref's element size changes
 useResizeObserver(
@@ -58,6 +66,7 @@ useResizeObserver(
 ```
 
 #### useWindowEvent
+
 ```ts
 // Simple window.addEventListner
 useWindowEvent(
@@ -68,6 +77,7 @@ useWindowEvent(
 ```
 
 #### useWindowSize
+
 ```ts
 // Keeps track of window size (undefined before first useEffect callback)
 useWindowSize() => {

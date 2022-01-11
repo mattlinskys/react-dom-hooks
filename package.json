@@ -1,7 +1,7 @@
 {
-  "name": "react-dom-hooks",
+  "name": "react-handy-hooks",
   "version": "1.0.0",
-  "description": "Useful pure react dom hooks",
+  "description": "Handy pure react hooks",
   "main": "./dist/index.js",
   "exports": {
     ".": "./dist/index.js",

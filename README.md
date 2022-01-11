@@ -1,1 +1,1 @@
-# react-dom-hooks
+# react-handy-hooks

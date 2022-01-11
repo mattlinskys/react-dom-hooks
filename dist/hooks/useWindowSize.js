@@ -8,6 +8,9 @@ const useOnResize_1 = __importDefault(require("./useOnResize"));
 const useWindowSize = () => {
     const [size, setSize] = (0, react_1.useState)();
     (0, useOnResize_1.default)(setSize);
+    (0, react_1.useEffect)(() => {
+        setSize({ width: window.innerWidth, height: window.innerHeight });
+    }, []);
     return size;
 };
 exports.default = useWindowSize;

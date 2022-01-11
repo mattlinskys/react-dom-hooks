@@ -1,3 +1,3 @@
-import { MutableRefObject, DependencyList } from "react";
-declare const useResizeObserver: (cb: ResizeObserverCallback, ref: MutableRefObject<HTMLElement | null>, deps?: DependencyList | undefined) => void;
+import { MutableRefObject } from "react";
+declare const useResizeObserver: (cb: ResizeObserverCallback, ref: MutableRefObject<HTMLElement | null>) => void;
 export default useResizeObserver;

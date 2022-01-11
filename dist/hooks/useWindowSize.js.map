@@ -1,0 +1,1 @@
+{"version":3,"file":"useWindowSize.js","sourceRoot":"","sources":["../../src/hooks/useWindowSize.ts"],"names":[],"mappings":";;;;;AAAA,iCAAiC;AACjC,gEAAwC;AAIxC,MAAM,aAAa,GAAG,GAAG,EAAE;IACzB,MAAM,CAAC,IAAI,EAAE,OAAO,CAAC,GAAG,IAAA,gBAAQ,GAAQ,CAAC;IACzC,IAAA,qBAAW,EAAC,OAAO,CAAC,CAAC;IAErB,OAAO,IAAI,CAAC;AACd,CAAC,CAAC;AAEF,kBAAe,aAAa,CAAC"}

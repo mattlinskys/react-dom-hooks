@@ -1,0 +1,1 @@
+{"version":3,"file":"useOnResize.js","sourceRoot":"","sources":["../../src/hooks/useOnResize.ts"],"names":[],"mappings":";;;;;AAAA,sEAA8C;AAE9C,MAAM,WAAW,GAAG,CAAC,EAAqD,EAAE,EAAE,CAC5E,IAAA,wBAAc,EAAC,QAAQ,EAAE;IACvB,EAAE,CAAC,EAAE,KAAK,EAAE,MAAM,CAAC,UAAU,EAAE,MAAM,EAAE,MAAM,CAAC,WAAW,EAAE,CAAC,CAAC;AAC/D,CAAC,CAAC,CAAC;AAEL,kBAAe,WAAW,CAAC"}

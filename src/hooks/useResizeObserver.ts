@@ -1,9 +1,8 @@
-import { MutableRefObject, DependencyList, useEffect } from "react";
+import { MutableRefObject, useEffect } from "react";
 
 const useResizeObserver = (
   cb: ResizeObserverCallback,
-  ref: MutableRefObject<HTMLElement | null>,
-  deps?: DependencyList
+  ref: MutableRefObject<HTMLElement | null>
 ) => {
   useEffect(() => {
     const resizeObserver = new ResizeObserver(cb);
@@ -14,7 +13,7 @@ const useResizeObserver = (
     return () => {
       resizeObserver.disconnect();
     };
-  }, deps);
+  }, [cb]);
 };
 
 export default useResizeObserver;

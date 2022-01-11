@@ -4,6 +4,7 @@
   "description": "Useful pure react dom hooks",
   "main": "./dist/index.js",
   "exports": {
+    ".": "./dist/index.js",
     "./useResizeObserver": "./dist/hooks/useResizeObserver",
     "./useKeyListener": "./dist/hooks/useKeyListener",
     "./useOnEsc": "./dist/hooks/useOnEsc",

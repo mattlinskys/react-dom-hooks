@@ -6,4 +6,5 @@ import useWindowEvent from "./hooks/useWindowEvent";
 import useOnResize from "./hooks/useOnResize";
 import useWindowSize from "./hooks/useWindowSize";
 import useOutsideClick from "./hooks/useOutsideClick";
-export { useResizeObserver, useKeyListener, useOnEsc, useCountDown, useWindowEvent, useOnResize, useWindowSize, useOutsideClick, };
+import usePeriodicTime from "./hooks/usePeriodicTime";
+export { useResizeObserver, useKeyListener, useOnEsc, useCountDown, useWindowEvent, useOnResize, useWindowSize, useOutsideClick, usePeriodicTime, };

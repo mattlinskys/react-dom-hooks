@@ -12,7 +12,8 @@
     "./useWindowEvent": "./dist/hooks/useWindowEvent",
     "./useOnResize": "./dist/hooks/useOnResize",
     "./useWindowSize": "./dist/hooks/useWindowSize",
-    "./useOutsideClick": "./dist/hooks/useOutsideClick"
+    "./useOutsideClick": "./dist/hooks/useOutsideClick",
+    "./usePeriodicTime": "./dist/hooks/usePeriodicTime"
   },
   "typings": "./dist/index.d.ts",
   "typesVersions": {
@@ -40,6 +41,9 @@
       ],
       "useOutsideClick": [
         "./dist/hooks/useOutsideClick.d.ts"
+      ],
+      "usePeriodicTime": [
+        "./dist/hooks/usePeriodicTime.d.ts"
       ]
     }
   },

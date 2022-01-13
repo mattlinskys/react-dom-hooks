@@ -92,4 +92,11 @@ useWindowSize() => {
 } | undefined;
 ```
 
+#### usePeriodicTime
+
+```ts
+// Returns date perodically every `interval` ms
+usePeriodicTime(interval = 1000) => Date;
+```
+
 ### If you know any handy, pure hooks feel free to contribute

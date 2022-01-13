@@ -1,8 +1,8 @@
 import { MutableRefObject, useEffect } from "react";
 
 const useResizeObserver = (
-  cb: ResizeObserverCallback,
-  ref: MutableRefObject<HTMLElement | null>
+  ref: MutableRefObject<HTMLElement | null>,
+  cb: ResizeObserverCallback
 ) => {
   useEffect(() => {
     const resizeObserver = new ResizeObserver(cb);

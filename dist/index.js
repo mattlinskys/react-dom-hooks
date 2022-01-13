@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.useWindowSize = exports.useOnResize = exports.useWindowEvent = exports.useCountDown = exports.useOnEsc = exports.useKeyListener = exports.useResizeObserver = void 0;
+exports.useOutsideClick = exports.useWindowSize = exports.useOnResize = exports.useWindowEvent = exports.useCountDown = exports.useOnEsc = exports.useKeyListener = exports.useResizeObserver = void 0;
 const useResizeObserver_1 = __importDefault(require("./hooks/useResizeObserver"));
 exports.useResizeObserver = useResizeObserver_1.default;
 const useKeyListener_1 = __importDefault(require("./hooks/useKeyListener"));
@@ -18,4 +18,6 @@ const useOnResize_1 = __importDefault(require("./hooks/useOnResize"));
 exports.useOnResize = useOnResize_1.default;
 const useWindowSize_1 = __importDefault(require("./hooks/useWindowSize"));
 exports.useWindowSize = useWindowSize_1.default;
+const useOutsideClick_1 = __importDefault(require("./hooks/useOutsideClick"));
+exports.useOutsideClick = useOutsideClick_1.default;
 //# sourceMappingURL=index.js.map

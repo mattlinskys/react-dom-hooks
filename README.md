@@ -16,6 +16,12 @@ import { useOnEsc } from "react-dom-hooks";
 import useOnEsc from "react-dom-hooks/useOnEsc";
 ```
 
+### Storybook
+
+You can expole all hooks in the [storybook](https://storybook.js.org/)
+`npm i`
+`npm run storybook`
+
 ### Hooks
 
 #### useOnEsc

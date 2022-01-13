@@ -11,24 +11,44 @@
     "./useCountDown": "./dist/hooks/useCountDown",
     "./useWindowEvent": "./dist/hooks/useWindowEvent",
     "./useOnResize": "./dist/hooks/useOnResize",
-    "./useWindowSize": "./dist/hooks/useWindowSize"
+    "./useWindowSize": "./dist/hooks/useWindowSize",
+    "./useOutsideClick": "./dist/hooks/useOutsideClick"
   },
   "typings": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
-      "useResizeObserver": ["./dist/hooks/useResizeObserver.d.ts"],
-      "useKeyListener": ["./dist/hooks/useKeyListener.d.ts"],
-      "useOnEsc": ["./dist/hooks/useOnEsc.d.ts"],
-      "useCountDown": ["./dist/hooks/useCountDown.d.ts"],
-      "useWindowEvent": ["./dist/hooks/useWindowEvent.d.ts"],
-      "useOnResize": ["./dist/hooks/useOnResize.d.ts"],
-      "useWindowSize": ["./dist/hooks/useWindowSize.d.ts" ] 
+      "useResizeObserver": [
+        "./dist/hooks/useResizeObserver.d.ts"
+      ],
+      "useKeyListener": [
+        "./dist/hooks/useKeyListener.d.ts"
+      ],
+      "useOnEsc": [
+        "./dist/hooks/useOnEsc.d.ts"
+      ],
+      "useCountDown": [
+        "./dist/hooks/useCountDown.d.ts"
+      ],
+      "useWindowEvent": [
+        "./dist/hooks/useWindowEvent.d.ts"
+      ],
+      "useOnResize": [
+        "./dist/hooks/useOnResize.d.ts"
+      ],
+      "useWindowSize": [
+        "./dist/hooks/useWindowSize.d.ts"
+      ],
+      "useOutsideClick": [
+        "./dist/hooks/useOutsideClick.d.ts"
+      ]
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "clean": "rimraf ./dist"
+    "clean": "rimraf ./dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -45,7 +65,17 @@
   },
   "homepage": "https://github.com/mattlinskys/react-dom-hooks#readme",
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.12",
+    "@storybook/addon-essentials": "^6.4.12",
+    "@storybook/addon-links": "^6.4.12",
+    "@storybook/builder-webpack5": "^6.4.12",
+    "@storybook/manager-webpack5": "^6.4.12",
+    "@storybook/react": "^6.4.12",
     "@types/react": "^17.0.38",
+    "babel-loader": "^8.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
     "typescript": "^4.5.4",
     "webpack": "^5.65.0",

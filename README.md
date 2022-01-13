@@ -107,7 +107,7 @@ useOutsideClick(
 #### usePeriodicTime
 
 ```ts
-// Returns date perodically every `interval` ms
+// Returns new date periodically every `interval` ms
 usePeriodicTime(interval = 1000) => Date;
 ```
 

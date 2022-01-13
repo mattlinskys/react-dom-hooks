@@ -19,8 +19,10 @@ import useOnEsc from "react-dom-hooks/useOnEsc";
 ### Storybook
 
 You can expole all hooks in the [storybook](https://storybook.js.org/)
-`npm i`
+
 `npm run storybook`
+
+Make sure to run `npm i` before starting storybook
 
 ### Hooks
 
@@ -66,8 +68,8 @@ useOnResize(cb: (size: {
 ```ts
 // Callback when ref's element size changes
 useResizeObserver(
-  cb: ResizeObserverCallback,
   ref: MutableRefObject<HTMLElement | null>,
+  cb: ResizeObserverCallback
 ) => void;
 ```
 
@@ -90,6 +92,16 @@ useWindowSize() => {
     width: number;
     height: number;
 } | undefined;
+```
+
+#### useOutsideClick
+
+```ts
+// Callback on click outside of given ref's element
+useOutsideClick(
+  ref: MutableRefObject<HTMLElement | null>,
+  cb: (event: MouseEvent) => void
+) => void;
 ```
 
 ### If you know any handy, pure hooks feel free to contribute

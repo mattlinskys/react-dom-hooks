@@ -2,57 +2,89 @@
   "name": "react-handy-hooks",
   "version": "1.0.0",
   "description": "Handy pure react hooks",
-  "main": "./dist/index.js",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
   "exports": {
-    ".": "./dist/index.js",
-    "./useResizeObserver": "./dist/hooks/useResizeObserver",
-    "./useKeyListener": "./dist/hooks/useKeyListener",
-    "./useOnEsc": "./dist/hooks/useOnEsc",
-    "./useCountDown": "./dist/hooks/useCountDown",
-    "./useWindowEvent": "./dist/hooks/useWindowEvent",
-    "./useOnResize": "./dist/hooks/useOnResize",
-    "./useWindowSize": "./dist/hooks/useWindowSize",
-    "./useOutsideClick": "./dist/hooks/useOutsideClick",
-    "./usePeriodicTime": "./dist/hooks/usePeriodicTime"
+    ".": {
+      "require": "./lib/cjs/index.js",
+      "import": "./lib/esm/index.js"
+    },
+    "./useResizeObserver": {
+      "require": "./lib/cjs/hooks/useResizeObserver",
+      "import": "./lib/esm/hooks/useResizeObserver"
+    },
+    "./useKeyListener": {
+      "require": "./lib/cjs/hooks/useKeyListener",
+      "import": "./lib/esm/hooks/useKeyListener"
+    },
+    "./useOnEsc": {
+      "require": "./lib/cjs/hooks/useOnEsc",
+      "import": "./lib/esm/hooks/useOnEsc"
+    },
+    "./useCountDown": {
+      "require": "./lib/cjs/hooks/useCountDown",
+      "import": "./lib/esm/hooks/useCountDown"
+    },
+    "./useWindowEvent": {
+      "require": "./lib/cjs/hooks/useWindowEvent",
+      "import": "./lib/esm/hooks/useWindowEvent"
+    },
+    "./useOnResize": {
+      "require": "./lib/cjs/hooks/useOnResize",
+      "import": "./lib/esm/hooks/useOnResize"
+    },
+    "./useWindowSize": {
+      "require": "./lib/cjs/hooks/useWindowSize",
+      "import": "./lib/esm/hooks/useWindowSize"
+    },
+    "./useOutsideClick": {
+      "require": "./lib/cjs/hooks/useOutsideClick",
+      "import": "./lib/esm/hooks/useOutsideClick"
+    },
+    "./usePeriodicTime": {
+      "require": "./lib/cjs/hooks/usePeriodicTime",
+      "import": "./lib/esm/hooks/usePeriodicTime"
+    }
   },
-  "typings": "./dist/index.d.ts",
+  "typings": "./lib/esm/index.d.ts",
   "typesVersions": {
     "*": {
       "useResizeObserver": [
-        "./dist/hooks/useResizeObserver.d.ts"
+        "./lib/esm/hooks/useResizeObserver.d.ts"
       ],
       "useKeyListener": [
-        "./dist/hooks/useKeyListener.d.ts"
+        "./lib/esm/hooks/useKeyListener.d.ts"
       ],
       "useOnEsc": [
-        "./dist/hooks/useOnEsc.d.ts"
+        "./lib/esm/hooks/useOnEsc.d.ts"
       ],
       "useCountDown": [
-        "./dist/hooks/useCountDown.d.ts"
+        "./lib/esm/hooks/useCountDown.d.ts"
       ],
       "useWindowEvent": [
-        "./dist/hooks/useWindowEvent.d.ts"
+        "./lib/esm/hooks/useWindowEvent.d.ts"
       ],
       "useOnResize": [
-        "./dist/hooks/useOnResize.d.ts"
+        "./lib/esm/hooks/useOnResize.d.ts"
       ],
       "useWindowSize": [
-        "./dist/hooks/useWindowSize.d.ts"
+        "./lib/esm/hooks/useWindowSize.d.ts"
       ],
       "useOutsideClick": [
-        "./dist/hooks/useOutsideClick.d.ts"
+        "./lib/esm/hooks/useOutsideClick.d.ts"
       ],
       "usePeriodicTime": [
-        "./dist/hooks/usePeriodicTime.d.ts"
+        "./lib/esm/hooks/usePeriodicTime.d.ts"
       ]
     }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "clean": "rimraf ./dist",
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json",
+    "clean": "rimraf ./lib",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepublish": "npm run clean && npm run build"
   },
   "repository": {
     "type": "git",

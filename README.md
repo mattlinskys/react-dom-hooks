@@ -111,4 +111,18 @@ useOutsideClick(
 usePeriodicTime(interval = 1000) => Date;
 ```
 
+#### useInterval
+
+```ts
+// Simple window.setInterval (resets on cb reference or interval value change)
+useInterval(cb: () => void, interval: number) => Date;
+```
+
+#### useInterval
+
+```ts
+// Simple window.setTimeout (resets on cb reference or interval value change)
+useTimeout(cb: () => void, interval: number) => Date;
+```
+
 ### If you know any handy, pure hooks feel free to contribute

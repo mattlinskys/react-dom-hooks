@@ -7,6 +7,8 @@ import useOnResize from "./hooks/useOnResize";
 import useWindowSize from "./hooks/useWindowSize";
 import useOutsideClick from "./hooks/useOutsideClick";
 import usePeriodicTime from "./hooks/usePeriodicTime";
+import useInterval from "./hooks/useInterval";
+import useTimeout from "./hooks/useTimeout";
 
 export {
   useResizeObserver,
@@ -18,4 +20,6 @@ export {
   useWindowSize,
   useOutsideClick,
   usePeriodicTime,
+  useInterval,
+  useTimeout,
 };

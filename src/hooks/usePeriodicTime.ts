@@ -1,17 +1,14 @@
-import { useEffect, useState } from "react";
+import useInterval from "hooks/useInterval";
+import { useCallback, useEffect, useState } from "react";
 
 const usePeriodicTime = (interval = 1000) => {
   const [date, setDate] = useState(new Date());
 
-  useEffect(() => {
-    const i = setInterval(() => {
-      setDate(new Date());
-    }, interval);
+  const cb = useCallback(() => {
+    setDate(new Date());
+  }, []);
 
-    return () => {
-      clearInterval(i);
-    };
-  }, [interval]);
+  useInterval(cb, interval);
 
   return date;
 };

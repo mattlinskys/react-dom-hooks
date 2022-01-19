@@ -44,6 +44,14 @@
     "./usePeriodicTime": {
       "require": "./lib/cjs/hooks/usePeriodicTime",
       "import": "./lib/esm/hooks/usePeriodicTime"
+    },
+    "./useInterval": {
+      "require": "./lib/cjs/hooks/useInterval",
+      "import": "./lib/esm/hooks/useInterval"
+    },
+    "./useTimeout": {
+      "require": "./lib/cjs/hooks/useTimeout",
+      "import": "./lib/esm/hooks/useTimeout"
     }
   },
   "typings": "./lib/esm/index.d.ts",

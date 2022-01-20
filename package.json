@@ -52,6 +52,22 @@
     "./useTimeout": {
       "require": "./lib/cjs/hooks/useTimeout",
       "import": "./lib/esm/hooks/useTimeout"
+    },
+    "./useClipboard": {
+      "require": "./lib/cjs/hooks/useClipboard",
+      "import": "./lib/esm/hooks/useClipboard"
+    },
+    "./useThrottle": {
+      "require": "./lib/cjs/hooks/useThrottle",
+      "import": "./lib/esm/hooks/useThrottle"
+    },
+    "./useDebounce": {
+      "require": "./lib/cjs/hooks/useDebounce",
+      "import": "./lib/esm/hooks/useDebounce"
+    },
+    "./useElementVisibility": {
+      "require": "./lib/cjs/hooks/useElementVisibility",
+      "import": "./lib/esm/hooks/useElementVisibility"
     }
   },
   "typings": "./lib/esm/index.d.ts",
@@ -83,6 +99,24 @@
       ],
       "usePeriodicTime": [
         "./lib/esm/hooks/usePeriodicTime.d.ts"
+      ],
+      "useInterval": [
+        "./lib/esm/hooks/useInterval.d.ts"
+      ],
+      "useTimeout": [
+        "./lib/esm/hooks/useTimeout.d.ts"
+      ],
+      "useClipboard": [
+        "./lib/esm/hooks/useClipboard.d.ts"
+      ],
+      "useThrottle": [
+        "./lib/esm/hooks/useThrottle.d.ts"
+      ],
+      "useDebounce": [
+        "./lib/esm/hooks/useDebounce.d.ts"
+      ],
+      "useElementVisibility": [
+        "./lib/esm/hooks/useElementVisibility.d.ts"
       ]
     }
   },

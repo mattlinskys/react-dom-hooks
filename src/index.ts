@@ -9,6 +9,10 @@ import useOutsideClick from "./hooks/useOutsideClick";
 import usePeriodicTime from "./hooks/usePeriodicTime";
 import useInterval from "./hooks/useInterval";
 import useTimeout from "./hooks/useTimeout";
+import useClipboard from "./hooks/useClipboard";
+import useThrottle from "./hooks/useThrottle";
+import useDebounce from "./hooks/useDebounce";
+import useElementVisibility from "./hooks/useElementVisibility";
 
 export {
   useResizeObserver,
@@ -22,4 +26,8 @@ export {
   usePeriodicTime,
   useInterval,
   useTimeout,
+  useClipboard,
+  useThrottle,
+  useDebounce,
+  useElementVisibility,
 };

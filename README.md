@@ -118,11 +118,48 @@ usePeriodicTime(interval = 1000) => Date;
 useInterval(cb: () => void, interval: number) => Date;
 ```
 
-#### useInterval
+#### useTimeout
 
 ```ts
 // Simple window.setTimeout (resets on cb reference or interval value change)
 useTimeout(cb: () => void, interval: number) => Date;
+```
+
+#### useClipboard
+
+```ts
+// Returns function to copy text using navigator.clipboard.writeText
+useClipboard() => (text: string) => void;
+```
+
+#### useThrottle
+
+```ts
+// Returns throttle maker
+useThrottle() => () => (cb: () => void, delay: number) => void;
+```
+
+#### useDebounce
+
+```ts
+// Returns debounce maker
+useDebounce() => () => (cb: () => void, delay: number) => void;
+```
+
+#### useElementVisibility
+
+```ts
+// Returns true if element is visible in the view
+// Reacts to scrolling and ResizeObserver
+// Set parentSelector (e.g. #id) if ref.current is in an overflow parent, by default window is used
+useElementVisibility(
+  ref: MutableRefObject<HTMLElement | null>,
+  offset = 100,
+  {
+    parentSelector,
+    throttleDelay,
+  }: { parentSelector?: string; throttleDelay: number }
+) => boolean;
 ```
 
 ### If you know any handy, pure hooks feel free to contribute

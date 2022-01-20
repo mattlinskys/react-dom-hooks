@@ -154,11 +154,8 @@ useDebounce() => () => (cb: () => void, delay: number) => void;
 // Set parentSelector (e.g. #id) if ref.current is in an overflow parent, by default window is used
 useElementVisibility(
   ref: MutableRefObject<HTMLElement | null>,
-  offset = 100,
-  {
-    parentSelector,
-    throttleDelay,
-  }: { parentSelector?: string; throttleDelay: number }
+  offset: number = 100,
+  opts: { parentSelector?: string; throttleDelay: number }
 ) => boolean;
 ```
 

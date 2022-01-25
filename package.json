@@ -68,6 +68,10 @@
     "./useElementVisibility": {
       "require": "./lib/cjs/hooks/useElementVisibility",
       "import": "./lib/esm/hooks/useElementVisibility"
+    },
+    "./useIsWindowActive": {
+      "require": "./lib/cjs/hooks/useIsWindowActive",
+      "import": "./lib/esm/hooks/useIsWindowActive"
     }
   },
   "typings": "./lib/esm/index.d.ts",
@@ -117,6 +121,9 @@
       ],
       "useElementVisibility": [
         "./lib/esm/hooks/useElementVisibility.d.ts"
+      ],
+      "useIsWindowActive": [
+        "./lib/esm/hooks/useIsWindowActive.d.ts"
       ]
     }
   },

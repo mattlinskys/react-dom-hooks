@@ -162,4 +162,11 @@ useElementVisibility(
 ) => boolean;
 ```
 
+#### useIsWindowActive
+
+```ts
+// Returns true if current window is focused, false otherwise
+useIsWindowActive() => boolean;
+```
+
 ### If you know any handy, pure hooks feel free to contribute

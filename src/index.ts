@@ -13,6 +13,7 @@ import useClipboard from "./hooks/useClipboard";
 import useThrottle from "./hooks/useThrottle";
 import useDebounce from "./hooks/useDebounce";
 import useElementVisibility from "./hooks/useElementVisibility";
+import useIsWindowActive from "./hooks/useIsWindowActive";
 
 export {
   useResizeObserver,
@@ -30,4 +31,5 @@ export {
   useThrottle,
   useDebounce,
   useElementVisibility,
+  useIsWindowActive,
 };
